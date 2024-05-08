@@ -1,0 +1,70 @@
+@import "node_modules/bootswatch/dist/slate/variables"; // remplacer cerulean par votre theme du site bootswatch
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootswatch/dist/slate/bootswatch"; // remplacer cerulean par votre theme du site bootswatch
+
+
+
+.markdown-input-container {
+  display: block;
+  width: 100%; // Définit la largeur du formulaire pour occuper toute la largeur du conteneur parent
+  margin-top: 3em;
+  margin-left: 7em;
+}
+
+
+
+.form-container {
+  display: block;
+}
+
+
+
+.Sidebar {
+  width: 20em;
+  position: fixed; // Fixe la sidebar à une position
+  left: 0; // Colle la sidebar à gauche
+  top: 0;
+  bottom: 0;
+  overflow-y: auto; // Permet le défilement si le contenu dépasse la hauteur de la fenêtre
+  .label-container {
+    color: red; // Change la couleur du texte en rouge
+  }
+}
+
+
+.icon-container {
+  display: flex;
+  justify-content: flex-end; // Justifie les icônes à droite
+  align-items: center; // Alignement vertical des icônes
+  flex-grow: 1; // Assure que le conteneur prend tout l'espace disponible
+}
+
+//icon
+.label-container {
+  display: flex;
+  align-items: center; // Alignement vertical du texte et des icônes
+  width: 100%;
+}
+
+
+.note-manager {
+  display: flex;
+  justify-content: center; // Centre horizontalement les éléments enfants
+  align-items: center; // Centre verticalement les éléments enfants
+}
+
+.note-display-container {
+  margin-top: 3em; // Ajoute une marge en haut
+  margin-left: 7em;
+
+  h3 {
+    color: red; // Change la couleur du texte en rouge
+  }
+}
+
+// Ajoute des styles de survol pour les boutons dans Sidebar
+.text-success:hover, .text-secondary:hover, .text-danger:hover {
+  background-color: #404040; // Couleur de fond claire pour le survol
+  text-decoration: none; // Enlève le soulignement
+}
+
